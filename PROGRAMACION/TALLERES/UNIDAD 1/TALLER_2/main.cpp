@@ -39,7 +39,4 @@ int main(){
 
     } while (opcion != 2);
 
-
-
-
 }
