@@ -36,7 +36,6 @@ int main(){
             nuevoEstudiante.agregarEstudiante(nombre, cedula, edad);
             estudiantes.push_back(nuevoEstudiante);
         }
-
     } while (opcion != 2);
 
 }
