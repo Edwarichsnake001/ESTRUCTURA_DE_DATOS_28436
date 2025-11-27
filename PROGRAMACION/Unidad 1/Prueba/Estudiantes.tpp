@@ -22,6 +22,7 @@ bool Estudiantes<T>::validar()
 {
     if (id.empty() || nombre.empty()) {
         cout << "Los datos están vacíos\n";
+        return false;
     }
     return true;
 }

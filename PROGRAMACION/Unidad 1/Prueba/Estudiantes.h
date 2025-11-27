@@ -10,10 +10,12 @@ private:
     T nombre;
 
 public:
-
+    Estudiantes() = default;
+    
     void ingresarDatos();
     void mostrarDatos() const;
     bool validar();
+    Estudiantes(const T& i,const T& n) : id(i), nombre(n){}
 
     bool operator==(const Estudiantes& otro) const {
         return id == otro.id;

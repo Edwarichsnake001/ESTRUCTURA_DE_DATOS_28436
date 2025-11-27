@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1762898534 source:c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\libros.cpp
+	"Libros.h"
+	<iostream>
+	<string>
+
+1762898717 c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\libros.h
+	"Lista.h"
+	<iostream>
+	<ostream>
+	<string>
+
+1762898469 c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\lista.h
+	"NodoLista.h"
+	<iostream>
+
+1762898428 c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\nodolista.h
+
+1762898583 source:c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\usuariocontroller.cpp
+	"UsuarioController.h"
+
+1762898616 c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\usuariocontroller.h
+	"Usuario.h"
+	<vector>
+	<string>
+
+1762898632 c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\usuario.h
+	<iostream>
+	<string>
+
+1762898595 source:c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\libroscontroller.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	"LibrosController.h"
+
+1762898696 c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\libroscontroller.h
+	"Lista.h"
+	"Libros.h"
+	<string>
+
+1762898368 source:c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\preubadeproyecto\libreria\main.cpp
+	"LibrosController.h"
+	"UsuarioController.h"
+	"Libros.h"
+	<iostream>
+	<locale.h>
+	<string>
+

@@ -91,6 +91,5 @@ int main()
        Este problema se presta naturalmente a una solución recursiva porque se puede dividir en subproblemas:
        "¿Puedo llegar a la salida desde alguna de las celdas vecinas?"
        La recursión permite explorar todas las rutas posibles de forma ordenada y retroceder si una ruta no lleva a la solución.
-       Aunque una solución iterativa con pila o cola puede ser más eficiente, la recursiva es clara, intuitiva y refleja bien
-       la lógica de exploración y retroceso del laberinto.
+       Sin embargo, hay que considerar que otros procesos pueden ser un poco más eficientes e intuitivos.
     */
