@@ -8,24 +8,18 @@ using namespace std;
 
 int main() {
     setlocale(LC_CTYPE, "Spanish");
-    
-    // Crear un vector de productos. Los datos están diseñados para probar la comparación compuesta:
-    // P1 y P5 tienen la misma categoría (Bebida), forzando la comparación por Precio.
-    // P5 y P3 tienen diferente categoría.
-    // P3 y P2 tienen la misma categoría y el mismo precio, forzando la comparación por Peso.
+
     std::vector<Producto> productos = {
-        // Código | Descripción | Categoría | Peso | Precio
-        {101, "Leche", "Lacteo", 1.05, 3.50}, // P0 (Mínimo final)
-        {204, "Jugo Naranja", "Bebida", 0.50, 2.00}, // P1
-        {310, "Yogurt", "Lacteo", 0.30, 1.20}, // P2
-        {402, "Queso", "Lacteo", 0.40, 1.20}, // P3 (Igual Precio que P2, mayor Peso)
-        {507, "Agua 1L", "Bebida", 1.10, 2.00}  // P4 (Igual Precio que P1, mayor Peso)
+        {101, "Leche", "Lacteo", 1.05, 3.50}, 
+        {204, "Jugo Naranja", "Bebida", 0.50, 2.00}, 
+        {310, "Yogurt", "Lacteo", 0.30, 1.20}, 
+        {402, "Queso", "Lacteo", 0.40, 1.20}, 
+        {507, "Agua 1L", "Bebida", 1.10, 2.00}  
     };
     
     cout << "--- Estado Inicial del Vector de Productos ---\n";
     printArray(productos);
 
-    // Aplicar Selection Sort
     selectionSort(productos);
 
     cout << "\n--- Estado Final del Vector (Ordenado: Categoría -> Precio -> Peso) ---\n";
@@ -33,3 +27,11 @@ int main() {
 
     return 0;
 }
+
+/*Selection Sort es ideal para registros 'pesados' (grandes estructuras) porque minimiza el costo de movimiento.
+
+Mínimo Movimiento: Realiza exactamente $N-1$ intercambios (en el peor y mejor caso, donde $N$ es el tamaño del arreglo).
+Costo de Movimiento: Aunque el intercambio es costoso porque mueve el registro completo, este costo solo se paga una vez 
+por pasada.
+Costo de Comparación: El costo de las comparaciones O(N^2)S sigue siendo alto, pero en escenarios donde 
+el movimiento es mucho más costoso que la comparación, Selection Sort es la mejor opción cuadrática.*/

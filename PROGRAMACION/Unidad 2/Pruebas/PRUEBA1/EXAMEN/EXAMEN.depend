@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1764602665 source:c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\unidad 2\pruebas\prueba1\examen\main.cpp
+	<iostream>
+	<locale.h>
+	"ListaSimple.h"
+
+1764602802 c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\unidad 2\pruebas\prueba1\examen\listasimple.h
+	"Estudiante.h"
+	<iomanip>
+
+1764602107 c:\users\mate-\desktop\ed_28436\estructura_de_datos_28436\programacion\unidad 2\pruebas\prueba1\examen\estudiante.h
+	<iostream>
+	<string>
+

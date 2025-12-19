@@ -7,11 +7,12 @@
 
 using namespace std;
 
+typedef int Numeros;
+
 int main()
 {
     setlocale(LC_ALL, "es_ES.UTF-8");
     ListaCircularDoble lista;
-    typedef int Numeros;
     Numeros opcion;
     string titulo, artista;
 

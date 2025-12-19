@@ -22,13 +22,13 @@ int main() {
     int n = sizeof(transactions) / sizeof(transactions[0]);
 
     cout << "--- Estado Inicial del Arreglo de Transacciones ---\n";
-    printArray(transactions, n);
+    imprimirArray(transactions, n);
 
     // Aplicar Insertion Sort (ordenando por monto)
     insertionSort(transactions, n);
 
     cout << "\n--- Estado Final del Arreglo (Ordenado por Monto) ---\n";
-    printArray(transactions, n);
+    imprimirArray(transactions, n);
     
     cout << "\nVerificación de Estabilidad:\n";
     cout << "Las transacciones con Monto = $100.00 (T201 y T310) mantuvieron su orden original:\n";
@@ -38,3 +38,19 @@ int main() {
 
     return 0;
 }
+
+/*Preservación de la Estabilidad (monto igual):
+ El algoritmo Insertion Sort es naturalmente estable porque:
+ La condición de comparación es estricta: `arr[j].monto > key.monto`.
+
+ Si dos elementos tienen el mismo monto (`arr[j].monto == key.monto`), la condición es falsa, 
+ y la clave (`key`) se inserta después del elemento igual (`arr[j]`).
+
+ Esto garantiza que si el elemento A estaba antes que el elemento B en el arreglo original y 
+ `monto(A) == monto(B)`, A seguirá estando antes que B en el arreglo ordenado, cumpliendo con la definición de estabilidad.
+
+Implicaciones en aplicaciones reales:
+Clasificación Secundaria: Si ordenas por 'monto' y luego por 'fecha' (en el orden original), 
+un algoritmo estable asegura que las transacciones con el mismo monto mantengan el orden de 'fecha' que tenían antes.
+Auditoría: Permite al sistema mantener el orden cronológico o de ingreso (nuestro campo `order`) 
+dentro de grupos de datos idénticos.*/
